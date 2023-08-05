@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Buld By Soham</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Poppins:ital,wght@1,600&family=Roboto&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    /> -->
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ----------header------------ -->
+
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="img/logo.png" alt="logo" /></a>
+        <div class="nav-link" id="navlinks">
+          <i class="fa fa-bars" onclick="hidemenu()"></i>
+
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="abut.htlm.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="block.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-window-close" onclick="showmenu()"></i>
+      </nav>
+
+      <h1>About Us</h1>
+    </section>
+
+    <!-- ---------about Us content--------- -->
+
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>We are the World's largest University</h1>
+          <p>
+            The ranking of top US universities looks at nine different
+            categories to rate the institutions, including faculty resources and
+            social mobility. <br />
+            Four of the eight Ivy League colleges make the top 10, with
+            Princeton securing the number one spot.
+          </p>
+          <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+          <img src="img/about.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------Footer---------- -->
+    <section class="footer">
+      <h3>About Us</h3>
+      <p>
+        The ranking of top US universities looks at nine different categories to
+        rate the institutions, including faculty resources and social mobility.
+        <br />
+        Four of the eight Ivy League colleges make the top 10, with Princeton
+        securing the number one spot.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+
+      <p>Made With <i class="fa fa-heart-o"></i> By Soham Chogale</p>
+    </section>
+
+    <script>
+      var navlinks = document.getElementById("navlinks");
+
+      function showmenu() {
+        navlinks.style.right = "0";
+      }
+
+      function hidemenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
